@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宿泊予約｜The Grand Elysium</title>
+  <style>
+    body {
+      font-family: "Noto Serif JP", "Hiragino Mincho Pro", serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #fff;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: #fff;
+      letter-spacing: 2px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: #111;
+      border: 1px solid #fff;
+      padding: 40px 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(191, 161, 74, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 1.8em;
+      border-bottom: 1px solid #fffffe;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #e198aa;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      background-color: #000;
+      border: 1px solid #f5f2e7;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1em;
+    }
+
+    form input:focus, form select:focus, form textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px #f8f8f7;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background-color: #;
+      color: #000;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      padding: 14px;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #fff;
+      box-shadow: 0 0 15px #fff;
+    }
+
+    footer {
+      text-align: center;
+      color: #fff;
+      font-size: 0.9em;
+      padding: 30px 0;
+      border-top: 1px solid #fff;
+      background-color: #000;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+.submit-btn-container {
+    text-align: center; /* 親で中央揃え */
+    margin-top: 20px;
+}
+   
+    .submit-button {
+    display: inline-block; /* インラインブロックにする */
+    text-align: center;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #555; /* グレー系 */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px; /* 丸みをつける */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Grand Elysium</h1>
+  </header>
+
+  <main>
+    <h2>宿泊予約フォーム</h2>
+    <form>
+      <label>チェックイン日：</label>
+      <input type="date" name="checkin" required>
+
+      <label>チェックアウト日：</label>
+      <input type="date" name="checkout" required>
+
+      <label>ご宿泊人数（人数に合わせたお部屋をご用意いたします）：</label>
+      <select name="guests" required>
+        <option value="">選択してください </option>
+        <option>1名</option>
+        <option>2名</option>
+        <option>3名</option>
+        <option>4名以上</option>
+      </select>
+
+      <label>お名前：</label>
+      <input type="text" name="name" placeholder="山田 太郎" required>
+
+      <label>メールアドレス：</label>
+      <input type="email" name="email" placeholder="example@mail.com" required>
+
+      <label>ご要望・メッセージ：</label>
+      <textarea name="requests" rows="4" placeholder="例：アレルギー対応をお願いします。"></textarea>
+      
+    </form>
+
+    <!-- ここに送信ボタン -->
+    <div class="submit-btn-container">
+        <a href="thankyou.html" class="submit-button">予約を確定する</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 The Grand Elysium｜<a href="index.html">トップページへ戻る</a></p>
+  </footer>
+
+
+
+</body>>
+</html>
